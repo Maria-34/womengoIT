@@ -1,0 +1,111 @@
+body {
+  margin: 0px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 auto;
+}
+
+/* Header */
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.header {
+  width: 100%;
+  padding-top: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+}
+
+
+/* Nav */
+
+.nav {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: white;
+  margin: 0 15px;
+  vertical-align: top;
+  position: relative;
+  transition: color 0.5s linear;
+}
+
+.nav__link:after {
+  content: "";
+  background-color: rgb(143, 116, 219);
+  display: block;
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 3px;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  border-radius: 10px;
+
+  transition: opacity 0.5s linear;
+}
+
+.nav__link:hover {
+  color: rgb(143, 116, 219);
+}
+
+.nav__link:hover:after {
+  opacity: 1;
+}
+
+
+.intro {
+  border: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background: url("C:/Users/Lenovo/Desktop/women go IT/assets/images/мал.3.jpg") center no-repeat;
+  background-size: cover;
+}
+
+.intro__inner {
+  border: solid red;
+  width: 100%;
+  max-width: 850px;
+  margin:0 auto;
+  text-align: center;
+   }
+
+.intro__title {
+  color: red;
+  font-size: 110px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.intro__uptitle {
+  margin-bottom: 20px;
+  font-family: 'Kaushan Script', sans-serif; font-size: 72px;
+  color: black;
+}
